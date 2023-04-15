@@ -3,6 +3,6 @@
 #include <iostream>
 
 std::string getName();
-int getGoal(std::string name);
+int getGoal(const std::string& name);
 double getHeight();
 double getWeight();

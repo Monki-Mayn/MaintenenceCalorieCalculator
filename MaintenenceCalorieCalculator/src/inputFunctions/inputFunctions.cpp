@@ -25,7 +25,7 @@ std::string getName()
 	return name;
 }
 
-int getGoal(std::string name)
+int getGoal(const std::string& name)
 {
 	int goal{};
 	while (true) {

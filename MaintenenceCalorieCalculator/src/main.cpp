@@ -15,5 +15,6 @@ int main()
 	height = getHeight();
 	weight = getWeight();
 
+	std::cout << "Hello" << std::endl;
 	return 0;
 }
