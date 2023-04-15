@@ -2,7 +2,9 @@
 
 #include <iostream>
 
+int getSex();
 std::string getName();
-int getGoal(const std::string& name);
+int getAge();
+int getActivityLevel();
 double getHeight();
 double getWeight();

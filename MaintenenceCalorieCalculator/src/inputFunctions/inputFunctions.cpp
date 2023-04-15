@@ -2,6 +2,21 @@
 #include <string>
 #include "inputFunctions.h"
 
+int getSex()
+{
+	int sex{};
+	while (true) {
+		std::cout << "\nWhat is your sex?\n[1]Female\n[2]Male\n";
+		std::cin >> sex;
+
+		if (sex < 1 || sex > 2)
+			std::cout << "Please only enter 1 or 2.\n";
+		else
+			return sex;
+
+	}
+}
+
 std::string getName()
 {
 	std::string name{};
@@ -25,30 +40,28 @@ std::string getName()
 	return name;
 }
 
-int getGoal(const std::string& name)
+int getAge()
 {
-	int goal{};
-	while (true) {
-		std::cout
-			<< "What are your goals " << name << "?\n"
-			<< "1: Gain Weight\n"
-			<< "2: Lose Weight\n"
-			<< "3: Maintain Weight\n";
-		std::cin >> goal;
+	int age{};
+	std::cout << "\nHow old are you?\n";
+	std::cin >> age;
 
-		if (goal == 1 || goal == 2 || goal == 3) {
-			std::cout << "\nGreat! ";
-			break;
-		}
-		else
-			std::cout
-			<< "Please enter one of the following values:\n"
-			<< "[1] if your goal is to gain weight\n"
-			<< "[2] if your goal is to lose weight\n"
-			<< "[3] if your goal is to maintain weight\n";
-	}
+	return age;
+}
 
-	return goal;
+int getActivityLevel()
+{
+	int activitylevel{};
+	std::cout
+		<< "What is you activity level?\n"
+		<< "[1]Sedentary: Little to no excercise, office job\n"
+		<< "[2]Lightly Active: Light daily activity & exercise 1-3 days per week\n"
+		<< "[3]Moderately Active: Moderate daily activity & exercise 3-5 days per week\n"
+		<< "[4]Very Active: Physically demanding lifestyle & exercise 6-7 days per week\n"
+		<< "[5]Extremely Active: Hard daily exercise/sports & physical job\n";
+		std::cin >> activitylevel;
+
+		return activitylevel;
 }
 
 double getHeight()

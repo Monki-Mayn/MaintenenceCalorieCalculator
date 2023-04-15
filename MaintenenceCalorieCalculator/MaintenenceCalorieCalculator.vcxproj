@@ -19,11 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\calculatione.cpp" />
     <ClCompile Include="src\inputFunctions\inputFunctions.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\PrintFunctions\information.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\inputFunctions\inputFunctions.h" />
+    <ClInclude Include="src\PrintFunctions\information.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
